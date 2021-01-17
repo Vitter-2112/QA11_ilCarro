@@ -15,8 +15,8 @@ public class CreateAccountTest extends TestBase {
     @BeforeMethod
 
     public void ensurePreconditions() {
-        if (!isElementPresent(By.cssSelector("[href='/signup']"))) {
-            click(By.xpath("//a[contains(.,'logOut')]"));
+        if (!isSignUpTabPresentInHeader()) {
+            logOut();
 //sign up not present, click on logout button
             //xpath: //a[contains(.,'logOut')]
 
@@ -24,26 +24,55 @@ public class CreateAccountTest extends TestBase {
         }
 
     }
+
     @Test
-    public void testSignUp(){
-       // wd.findElement(By.cssSelector("[href='/signup']")).click();
+    public void testSignUp() {
+        // wd.findElement(By.cssSelector("[href='/signup']")).click();
         click(By.cssSelector("[href='/signup']"));
-       // isElementPresent(By.cssSelector("form.signup__fields"));
+        // isElementPresent(By.cssSelector("form.signup__fields"));
         Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
+//fill registration form
+        fillRegistrationForm(new User().setFirstName("basilij").setSecondName("tEklmn").setEmail("sukr@web.de").setPassword("dglmZ0425"));
 
-        type(By.cssSelector("#first_name"), "Immanuil");
+//wd.findElement(By.cssSelector("#check_policy")).click();
+        click(By.cssSelector("#check_policy"));
 
-        type(By.cssSelector("#second_name"), "Kant");
+        //click Submit Button
+        submitForm();
+        //check login form displayed
+        //Assert.assertTrue(isLoginFormPresent());
+        Assert.assertTrue(isElementPresent(By.cssSelector(".Login_login__right_block__1niYm")));
+    }
 
-        type(By.cssSelector("#email"), "immanuil@gmail.com");
+    @Test
+    public void testSignUpWithoutPassword() {
+        // wd.findElement(By.cssSelector("[href='/signup']")).click();
+        click(By.cssSelector("[href='/signup']"));
+        // isElementPresent(By.cssSelector("form.signup__fields"));
+        Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
+//fill registration form
+        fillRegistrationForm(new User()
+                .setFirstName("lasilij")
+                .setSecondName("pEklmn")
+                .setEmail("zukr@web.de"));
 
-        type(By.cssSelector("#password"), "Mani12345");
+//wd.findElement(By.cssSelector("#check_policy")).click();
+        click(By.cssSelector("#check_policy"));
 
-        //wd.findElement(By.cssSelector("#check_policy")).click();
-         click (By.cssSelector("#check_policy"));
+        //Thread.sleep(2000);
 
-         //click Submit Button
-        click(By.cssSelector("[type='submit'"));
+        //click Submit Button
+        submitForm();
+        //check login form displayed
+        //Assert.assertTrue(isLoginFormPresent());
+        Assert.assertTrue(isElementPresent(By.cssSelector(".Login_login__right_block__1niYm")));
+    }
+
+    public void fillRegistrationForm(User user) {
+        type(By.name("first_name"), user.getFirstName());
+        type(By.name("second_name"), user.getSecondName());
+        type(By.name("email"), user.getEmail());
+        type(By.name("password"), user.getPassword());
     }
 
 }

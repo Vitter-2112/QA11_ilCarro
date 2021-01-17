@@ -21,12 +21,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1mygQFMYih7nftvDsemV1K9oeqt" />
   <component name="PropertiesComponent">
     <property name="extract.method.default.visibility" value="public" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -45,26 +47,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CreateAccountTest.testSignUp">
-    <configuration name="OpenHomePageTest.homePageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.ilcarro.qa11.OpenHomePageTest.homePageTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="TestNG.AddCarTest.testFormLetTheCarWork">
+    <configuration name="AddCarTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilcarro.qa11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCarTest.negativeTestAddTheCarWithoutDoors" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilcarro.qa11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
+      <option name="METHOD_NAME" value="negativeTestAddTheCarWithoutDoors" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCarTest.testFormLetTheCarWork" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilcarro.qa11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
+      <option name="METHOD_NAME" value="testFormLetTheCarWork" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="CreateAccountTest.testSignUp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
@@ -84,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenHomePageTest.homePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateAccountTest.testSignUpWithoutPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.OpenHomePageTest" />
-      <option name="METHOD_NAME" value="homePageTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.CreateAccountTest" />
+      <option name="METHOD_NAME" value="testSignUpWithoutPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,9 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddCarTest.testFormLetTheCarWork" />
+        <item itemvalue="TestNG.AddCarTest.negativeTestAddTheCarWithoutDoors" />
+        <item itemvalue="TestNG.CreateAccountTest.testSignUpWithoutPassword" />
+        <item itemvalue="TestNG.AddCarTest" />
         <item itemvalue="TestNG.CreateAccountTest.testSignUp" />
-        <item itemvalue="TestNG.OpenHomePageTest.homePageTest" />
-        <item itemvalue="Gradle.OpenHomePageTest.homePageTest" />
       </list>
     </recent_temporary>
   </component>

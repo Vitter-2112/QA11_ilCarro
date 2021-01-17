@@ -4,14 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-     WebDriver wd;
+    WebDriver wd;
 
     @BeforeMethod
     public void setUp() {
@@ -56,12 +58,36 @@ public class TestBase {
     }
 
     public void type(By locator, String text) {
-        wd.findElement(locator).click();
+        click(locator);
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
     }
 
-    public void click(By locator){
+    public void click(By locator) {
         wd.findElement(locator).click();
+    }
+
+    public Boolean isLoginFormPresent() {
+        return isElementPresent(By.cssSelector(".Login_login__right_block__1niYm"));
+    }
+
+    public void submitForm() {
+        click(By.cssSelector("[type='submit']"));
+    }
+
+    public boolean isSignUpTabPresentInHeader() {
+        return isElementPresent(By.cssSelector("[href='/signup']"));
+    }
+
+    public void logOut() {
+        click(By.xpath("//a[contains(.,'logOut')]"));
+    }
+
+    public void clickLoginTabOnHeader() {
+        click(By.cssSelector("[href='/login']"));
+    }
+
+    public boolean userLoggedIn() {
+        return isElementPresent(By.xpath("//a[contains(.,'logOut')]"));
     }
 }
