@@ -1,93 +1,21 @@
 package com.ilcarro.qa11;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    WebDriver wd;
+    protected final ApplicationManager app = new ApplicationManager();
 
     @BeforeMethod
     public void setUp() {
-        wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        wd.manage().window().maximize();
-        wd.get("https://ilcarro-dev-v1.firebaseapp.com/");
+        app.init();
 
     }
 
     @AfterMethod(enabled = false)
     public void tearDown() {
-        wd.quit();
+        app.stop();
     }
 
-    public boolean isCarFormPresent() {
-        return wd.findElements(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form")).size() > 0;
-    }
-
-    public boolean isCarFormPresent2(By by) {
-        try {
-            wd.findElements(by);
-            return true;
-        } catch (NoSuchElementException ex) {
-            System.out.println(" element not found");
-            return false;
-        }
-    }
-
-    /*public boolean isCarFormPresent2() {
-            try {
-                wd.findElements(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form"));
-                return true;
-            } catch (NoSuchElementException ex) {
-                System.out.println("no such element");
-                return false;
-            }
-
-            }*/
-    public boolean isElementPresent(By locator) {
-        return wd.findElements(locator).size() > 0;
-    }
-
-    public void type(By locator, String text) {
-        click(locator);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
-    }
-
-    public void click(By locator) {
-        wd.findElement(locator).click();
-    }
-
-    public Boolean isLoginFormPresent() {
-        return isElementPresent(By.cssSelector(".Login_login__right_block__1niYm"));
-    }
-
-    public void submitForm() {
-        click(By.cssSelector("[type='submit']"));
-    }
-
-    public boolean isSignUpTabPresentInHeader() {
-        return isElementPresent(By.cssSelector("[href='/signup']"));
-    }
-
-    public void logOut() {
-        click(By.xpath("//a[contains(.,'logOut')]"));
-    }
-
-    public void clickLoginTabOnHeader() {
-        click(By.cssSelector("[href='/login']"));
-    }
-
-    public boolean userLoggedIn() {
-        return isElementPresent(By.xpath("//a[contains(.,'logOut')]"));
-    }
 }

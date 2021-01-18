@@ -15,12 +15,10 @@ public class CreateAccountTest extends TestBase {
     @BeforeMethod
 
     public void ensurePreconditions() {
-        if (!isSignUpTabPresentInHeader()) {
-            logOut();
+        if (!app.getHeader().isSignUpTabPresentInHeader()) {
+            app.getUser().logOut();
 //sign up not present, click on logout button
-            //xpath: //a[contains(.,'logOut')]
-
-            // [href='/signup']
+// [href='/signup']
         }
 
     }
@@ -28,53 +26,53 @@ public class CreateAccountTest extends TestBase {
     @Test
     public void testSignUp() {
         // wd.findElement(By.cssSelector("[href='/signup']")).click();
-        click(By.cssSelector("[href='/signup']"));
+        app.getHeader().openRegistrationForm();
         // isElementPresent(By.cssSelector("form.signup__fields"));
-        Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
+        //Assert.assertTrue(app.isElementPresent(By.cssSelector("form.signup__fields")));
+        app.getUser().isRegistrationFormOpened();
 //fill registration form
-        fillRegistrationForm(new User().setFirstName("basilij").setSecondName("tEklmn").setEmail("sukr@web.de").setPassword("dglmZ0425"));
+        app.getUser().fillRegistrationForm(new User().setFirstName("basilyx").setSecondName("tEklsha").setEmail("bukr@web.de").setPassword("dglGZ0425"));
 
 //wd.findElement(By.cssSelector("#check_policy")).click();
-        click(By.cssSelector("#check_policy"));
+        app.getUser().selectPolicyCheckbox();
 
         //click Submit Button
-        submitForm();
+        app.getUser().submitForm();
         //check login form displayed
-        //Assert.assertTrue(isLoginFormPresent());
-        Assert.assertTrue(isElementPresent(By.cssSelector(".Login_login__right_block__1niYm")));
+       Assert.assertTrue(app.getUser().isLoginFormPresent());
+
     }
 
     @Test
     public void testSignUpWithoutPassword() {
         // wd.findElement(By.cssSelector("[href='/signup']")).click();
-        click(By.cssSelector("[href='/signup']"));
+        app.getHeader().openRegistrationForm();
+        app.getUser().isRegistrationFormOpened();
+        app.getUser().fillRegistrationForm(new User().setFirstName("basilyx").setSecondName("tEklsha").setEmail("bukr@web.de"));
+        app.getUser().selectPolicyCheckbox();
+        app.getUser().submitForm();
+        Assert.assertTrue(app.getUser().isLoginFormPresent()); }
+
+}
+
         // isElementPresent(By.cssSelector("form.signup__fields"));
-        Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
+      /*  Assert.assertTrue(app.isElementPresent(By.cssSelector("form.signup__fields")));
 //fill registration form
-        fillRegistrationForm(new User()
+        app.fillRegistrationForm(new User()
                 .setFirstName("lasilij")
                 .setSecondName("pEklmn")
-                .setEmail("zukr@web.de"));
+                .setEmail("zukr@web.de"));*/
 
 //wd.findElement(By.cssSelector("#check_policy")).click();
-        click(By.cssSelector("#check_policy"));
+
 
         //Thread.sleep(2000);
 
         //click Submit Button
-        submitForm();
+
         //check login form displayed
         //Assert.assertTrue(isLoginFormPresent());
-        Assert.assertTrue(isElementPresent(By.cssSelector(".Login_login__right_block__1niYm")));
-    }
 
-    public void fillRegistrationForm(User user) {
-        type(By.name("first_name"), user.getFirstName());
-        type(By.name("second_name"), user.getSecondName());
-        type(By.name("email"), user.getEmail());
-        type(By.name("password"), user.getPassword());
-    }
 
-}
 
 

@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddCarTest.testFormLetTheCarWork">
+  <component name="RunManager" selected="TestNG.com.ilcarro.qa11">
     <configuration name="AddCarTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
@@ -65,7 +65,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCarTest.negativeTestAddTheCarWithoutDoors" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddCarTest.negativeTestAddCarWithoutDoors" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
@@ -75,7 +75,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
       <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
-      <option name="METHOD_NAME" value="negativeTestAddTheCarWithoutDoors" />
+      <option name="METHOD_NAME" value="negativeTestAddCarWithoutDoors" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -83,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCarTest.testFormLetTheCarWork" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginRegisteredUserPositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
@@ -92,8 +92,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
-      <option name="METHOD_NAME" value="testFormLetTheCarWork" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.LoginTest" />
+      <option name="METHOD_NAME" value="loginRegisteredUserPositiveTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -101,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAccountTest.testSignUp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
@@ -110,16 +110,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.CreateAccountTest" />
-      <option name="METHOD_NAME" value="testSignUp" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.OpenHomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAccountTest.testSignUpWithoutPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="com.ilcarro.qa11" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
@@ -128,9 +127,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.CreateAccountTest" />
-      <option name="METHOD_NAME" value="testSignUpWithoutPassword" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddCarTest.testFormLetTheCarWork" />
-        <item itemvalue="TestNG.AddCarTest.negativeTestAddTheCarWithoutDoors" />
-        <item itemvalue="TestNG.CreateAccountTest.testSignUpWithoutPassword" />
+        <item itemvalue="TestNG.com.ilcarro.qa11" />
+        <item itemvalue="TestNG.LoginTest.loginRegisteredUserPositiveTest" />
+        <item itemvalue="TestNG.OpenHomePageTest" />
         <item itemvalue="TestNG.AddCarTest" />
-        <item itemvalue="TestNG.CreateAccountTest.testSignUp" />
+        <item itemvalue="TestNG.AddCarTest.negativeTestAddCarWithoutDoors" />
       </list>
     </recent_temporary>
   </component>
