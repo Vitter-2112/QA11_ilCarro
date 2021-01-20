@@ -36,7 +36,7 @@ public class CreateAccountTest extends TestBase {
 
     }
 
-    @Test
+    @Test (enabled=false)
     public void testSignUp() {
         // wd.findElement(By.cssSelector("[href='/signup']")).click();
         app.getHeader().openRegistrationForm();
@@ -82,7 +82,7 @@ public class CreateAccountTest extends TestBase {
 
     }*/
 
-    @Test
+    @Test (enabled=false)
     public void testSignUpWithoutPassword() {
         // wd.findElement(By.cssSelector("[href='/signup']")).click();
         app.getHeader().openRegistrationForm();

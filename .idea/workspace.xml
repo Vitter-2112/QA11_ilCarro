@@ -48,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.com.ilcarro.qa11">
     <configuration name="C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -131,9 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.com.ilcarro.qa11" />
         <item itemvalue="TestNG.C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.CreateAccountTest.testSignUp" />
-        <item itemvalue="TestNG.com.ilcarro.qa11" />
         <item itemvalue="TestNG.LoginTest.loginRegisteredUserPositiveTest" />
         <item itemvalue="TestNG.CreateAccountTest.testSignUpFromDataProvider" />
       </list>
