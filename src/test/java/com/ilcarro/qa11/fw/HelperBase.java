@@ -1,4 +1,4 @@
-package com.ilcarro.qa11;
+package com.ilcarro.qa11.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

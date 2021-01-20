@@ -1,5 +1,7 @@
-package com.ilcarro.qa11;
+package com.ilcarro.qa11.fw;
 
+import com.ilcarro.qa11.fw.HelperBase;
+import com.ilcarro.qa11.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -22,7 +24,7 @@ public class UserHelper extends HelperBase {
         type(By.name("password"), user.getPassword());
     }
 
-    protected void login() {
+    public void login() {
         click(By.cssSelector("[href='/login']"));
         fillLoginForm(new User()
                 .setEmail("sukr@web.de")

@@ -1,5 +1,6 @@
-package com.ilcarro.qa11;
+package com.ilcarro.qa11.test;
 
+import com.ilcarro.qa11.model.Car;
 import org.testng.annotations.Test;
 
 public class AddCarTest extends TestBase {

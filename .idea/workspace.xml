@@ -28,6 +28,7 @@
   <component name="ProjectId" id="1mygQFMYih7nftvDsemV1K9oeqt" />
   <component name="PropertiesComponent">
     <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Yandex_test" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -47,35 +48,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.com.ilcarro.qa11">
-    <configuration name="AddCarTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml">
+    <configuration name="C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ilcarro.qa11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCarTest.negativeTestAddCarWithoutDoors" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateAccountTest.testSignUp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ilcarro.qa11.*" />
+          <option name="PATTERN" value="com.ilcarro.qa11.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.AddCarTest" />
-      <option name="METHOD_NAME" value="negativeTestAddCarWithoutDoors" />
+      <option name="PACKAGE_NAME" value="com.ilcarro.qa11.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.test.CreateAccountTest" />
+      <option name="METHOD_NAME" value="testSignUp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccountTest.testSignUpFromDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilcarro.qa11.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilcarro.qa11.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.test.CreateAccountTest" />
+      <option name="METHOD_NAME" value="testSignUpFromDataProvider" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -87,31 +99,14 @@
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ilcarro.qa11.*" />
+          <option name="PATTERN" value="com.ilcarro.qa11.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.test.LoginTest" />
       <option name="METHOD_NAME" value="loginRegisteredUserPositiveTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OpenHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="untitled.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ilcarro.qa11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.OpenHomePageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -136,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.CreateAccountTest.testSignUp" />
         <item itemvalue="TestNG.com.ilcarro.qa11" />
         <item itemvalue="TestNG.LoginTest.loginRegisteredUserPositiveTest" />
-        <item itemvalue="TestNG.OpenHomePageTest" />
-        <item itemvalue="TestNG.AddCarTest" />
-        <item itemvalue="TestNG.AddCarTest.negativeTestAddCarWithoutDoors" />
+        <item itemvalue="TestNG.CreateAccountTest.testSignUpFromDataProvider" />
       </list>
     </recent_temporary>
   </component>

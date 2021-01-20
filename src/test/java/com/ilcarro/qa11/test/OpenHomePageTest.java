@@ -1,4 +1,4 @@
-package com.ilcarro.qa11;
+package com.ilcarro.qa11.test;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
