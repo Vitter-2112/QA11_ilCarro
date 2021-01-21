@@ -48,11 +48,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.com.ilcarro.qa11">
+  <component name="RunManager" selected="TestNG.C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml">
     <configuration name="C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilcarro.qa11.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilcarro.qa11.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.test.CreateAccountTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -77,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAccountTest.testSignUpFromDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateAccountTest.testSignUpWithoutPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="untitled.test" />
       <extension name="coverage">
         <pattern>
@@ -87,7 +104,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ilcarro.qa11.test" />
       <option name="MAIN_CLASS_NAME" value="com.ilcarro.qa11.test.CreateAccountTest" />
-      <option name="METHOD_NAME" value="testSignUpFromDataProvider" />
+      <option name="METHOD_NAME" value="testSignUpWithoutPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -113,29 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ilcarro.qa11" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="untitled.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ilcarro.qa11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ilcarro.qa11" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.com.ilcarro.qa11" />
         <item itemvalue="TestNG.C:/Users/Lenovo/Documents/GitHubQA11/QA11_ilCarro/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.CreateAccountTest.testSignUp" />
         <item itemvalue="TestNG.LoginTest.loginRegisteredUserPositiveTest" />
-        <item itemvalue="TestNG.CreateAccountTest.testSignUpFromDataProvider" />
+        <item itemvalue="TestNG.CreateAccountTest" />
+        <item itemvalue="TestNG.CreateAccountTest.testSignUp" />
+        <item itemvalue="TestNG.CreateAccountTest.testSignUpWithoutPassword" />
       </list>
     </recent_temporary>
   </component>

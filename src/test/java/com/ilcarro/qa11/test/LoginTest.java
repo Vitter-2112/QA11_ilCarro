@@ -21,7 +21,7 @@ public class LoginTest extends TestBase {
     }
 
 
-    @Test (enabled=false)
+    @Test
     public void loginRegisteredUserPositiveTest() {
         //goto login page
         //fill login form
